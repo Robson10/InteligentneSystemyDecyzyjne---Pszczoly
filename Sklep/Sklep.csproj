@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{ABBF6EFC-228C-4956-AF9E-15E49B75BA89}</ProjectGuid>
+    <ProjectGuid>{F9949127-5914-4C8D-A617-5278F9077BFA}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Inteligentne_systemy_decyzyjne</RootNamespace>
-    <AssemblyName>Inteligentne systemy decyzyjne</AssemblyName>
+    <RootNamespace>Sklep</RootNamespace>
+    <AssemblyName>Sklep</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,37 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cosinus.cs" />
     <Compile Include="Euklides.cs" />
-    <Compile Include="Helper.cs" />
-    <Compile Include="Manhatan.cs" />
-    <Compile Include="Maximum.cs" />
-    <Compile Include="Minikowski.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TFIDF.cs" />
     <Compile Include="TFM.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Arkusz Kalkulacyjny\Kacper Tomalik- ISD.xlsx" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="txtFiles\d0.txt" />
-    <EmbeddedResource Include="txtFiles\d1.txt" />
-    <EmbeddedResource Include="txtFiles\d10.txt" />
-    <EmbeddedResource Include="txtFiles\d11.txt" />
-    <EmbeddedResource Include="txtFiles\d12.txt" />
-    <EmbeddedResource Include="txtFiles\d13.txt" />
-    <EmbeddedResource Include="txtFiles\d14.txt" />
-    <EmbeddedResource Include="txtFiles\d2.txt" />
-    <EmbeddedResource Include="txtFiles\d3.txt" />
-    <EmbeddedResource Include="txtFiles\d4.txt" />
-    <EmbeddedResource Include="txtFiles\d5.txt" />
-    <EmbeddedResource Include="txtFiles\d6.txt" />
-    <EmbeddedResource Include="txtFiles\d7.txt" />
-    <EmbeddedResource Include="txtFiles\d8.txt" />
-    <EmbeddedResource Include="txtFiles\d9.txt" />
+    <Folder Include="Sprawozdanie\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
