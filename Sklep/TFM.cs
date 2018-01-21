@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -44,7 +45,8 @@ namespace Sklep
         public void Wypelnij()
         {
             List<dItem> temp = new List<dItem>();
-            temp.Add(new dItem(10, 40, true, "Koszalin", "ZP", "User" + (temp.Count + 1)){ PierscienDoPowalki = true, SitkoPajakDoPowalki= true, PodkarmiaczkaPowalkowa= true });
+            temp.Add(new dItem(10, 40, true, "Koszalin", "ZP", "User" + (temp.Count + 1))
+            { PierscienDoPowalki = true, SitkoPajakDoPowalki= true, PodkarmiaczkaPowalkowa= true });
             temp.Add(new dItem(11, 50, false, "Koszalin", "ZP", "User" + (temp.Count + 1)) { EtykietaNaMiodGryczany= true, NakretkiNaSloikZMiodem= true });
             temp.Add(new dItem(13, 60, false, "Koszalin", "ZP", "User" + (temp.Count + 1)) { PierscienDoPowalki = true, SitkoPajakDoPowalki = true, PodkarmiaczkaPowalkowa = true, PokarmCiastoFondant=true});
             temp.Add(new dItem(16, 40, true, "Koszalin", "ZP", "User" + (temp.Count + 1)) { PodkurzaczDadant = true, MiotelkaPasieczna= true });
@@ -146,6 +148,7 @@ namespace Sklep
         private string miasto;
         private string wojewodztwo;
         private string name;
+
 
 
         public bool PierscienDoPowalki { get => pierscienDoPowalki; set => pierscienDoPowalki = value; }

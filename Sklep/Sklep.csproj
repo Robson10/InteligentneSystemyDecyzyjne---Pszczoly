@@ -49,9 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Sprawozdanie\Kacper Tomalik - Sprawozdanie do aplikacji.odt" />
+    <None Include="Sprawozdanie\Kacper Tomalik - Sprawozdanie do aplikacji.pdf" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Sprawozdanie\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
